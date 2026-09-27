@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 3 - Recently Viewed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>TechMart</h1>
+        <p>Recently Viewed Products</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Products</h2>
+            <div id="products" class="products-grid"></div>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <h2>Recently Viewed</h2>
+                <button id="clearHistory">Remove History</button>
+            </div>
+
+            <div id="recentlyViewed" class="products-grid"></div>
+        </section>
+
+    </main>
+Get-ChildItem -Directory -Force
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="modal hidden">
+
+        <div class="modal-content">
+
+            <button id="closeModal" class="close-btn">×</button>
+
+            <div id="modalContent"></div>
+
+        </div>
+
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
